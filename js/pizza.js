@@ -5,7 +5,24 @@
 * Keys with more than one value should be an array of strings ex. Veggies
 */
 
+var order11821 = {
+  customerName: "James Franko",
+  address: "2155 E Lake Dr",
+  city: "Seattle",
+  state: "WA",
+  zipCode: "11310",
+  pizza: [
+    "thin",
+    "robust marinara",
+    "regular"
+  ],
+  toppings: [
+      { veggies: "olives", "green peppers"},
+      {meats: "pepperoni", "ham", "sausage"}
+  ] 
+}
 
+console.log(order11821.pizza[1])
 /*
 * Create a new variable named currentOrders
 * currentOrders should be single object containing both orders from above
