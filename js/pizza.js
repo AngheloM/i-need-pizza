@@ -10,19 +10,54 @@ var order11821 = {
   address: "2155 E Lake Dr",
   city: "Seattle",
   state: "WA",
-  zipCode: "11310",
+  zipCode: 11310,
   pizza: [
     "thin",
     "robust marinara",
     "regular"
   ],
   toppings: [
-      { veggies: "olives", "green peppers"},
-      {meats: "pepperoni", "ham", "sausage"}
-  ] 
+      {veggies: ["olives", "green peppers"]},
+      {meats: ["pepperoni", "ham", "sausage"]}
+  ],
+  sideItems: [
+    "breadsticks",
+    "bbq wings 6 piece"
+  ],
+  sauces: "ranch",
+  specialInstructions: "please cut into squares",
+  paymentType: "cash",
+  storeId: 112
 }
 
-console.log(order11821.pizza[1])
+console.log(order11821)
+
+var order11372 = {
+  customerName: "Justin Bieber",
+  address: "1801 W Rodeo Dr",
+  city: "Beverly Hills",
+  state: "CA",
+  zipCode: 91833,
+  pizza: [
+    "stuffed crust",
+    "creamy garlic alfredo",
+    "double"
+  ],
+  toppings: [
+    {veggies: ["onion", "anchovies", "mushrooms"]},
+    {meats: ["chicken", "bacon"]}
+  ],
+  sideItems: "double fudge brownie dessert",
+  sauces: [
+  "bbq",
+  "garlic sauce"
+  ],
+  specialInstructions: "call 815 at the gate",
+  paymentType: "credit card",
+  storeId: 382
+}
+
+console.log(order11372)
 /*
 * Create a new variable named currentOrders
 * currentOrders should be single object containing both orders from above
