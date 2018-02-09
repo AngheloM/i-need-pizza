@@ -13,12 +13,12 @@ var order11821 = {
   zipCode: 11310,
   pizza: [
     "thin",
-    "robust marinara",
+    "classic marinara",
     "regular"
   ],
   toppings: [
-      {veggies: ["olives", "green peppers"]},
-      {meats: ["pepperoni", "ham", "sausage"]}
+      {veggies: ["olives", "green peppers, spinach"]},
+      {meats: ["pepperoni", "ham"]}
   ],
   sideItems: [
     "breadsticks",
@@ -27,10 +27,11 @@ var order11821 = {
   sauces: "ranch",
   specialInstructions: "please cut into squares",
   paymentType: "cash",
-  storeId: 112
+  storeId: 112,
+  orderTime: "20 minutes"
 }
 
-console.log(order11821)
+/*console.log(order11821)*/
 
 var order11372 = {
   customerName: "Justin Bieber",
@@ -57,12 +58,66 @@ var order11372 = {
   storeId: 382
 }
 
-console.log(order11372)
+/*console.log(order11372)*/
 /*
 * Create a new variable named currentOrders
 * currentOrders should be single object containing both orders from above
 */
 
+
+var currentOrders = {[ 
+  order11372 = {
+  customerName: "Justin Bieber",
+  address: "1801 W Rodeo Dr",
+  city: "Beverly Hills",
+  state: "CA",
+  zipCode: 91833,
+  pizza: [
+    "stuffed crust",
+    "creamy garlic alfredo",
+    "double"
+  ],
+  toppings: [
+    {veggies: ["onion", "anchovies", "mushrooms"]},
+    {meats: ["chicken", "bacon"]}
+  ],
+  sideItems: "double fudge brownie dessert",
+  sauces: [
+  "bbq",
+  "garlic sauce"
+  ],
+  specialInstructions: "call 815 at the gate",
+  paymentType: "credit card",
+  storeId: 382
+},
+ order11821 = {
+  customerName: "James Franko",
+  address: "2155 E Lake Dr",
+  city: "Seattle",
+  state: "WA",
+  zipCode: 11310,
+  pizza: [
+    "thin",
+    "classic marinara",
+    "regular"
+  ],
+  toppings: [
+      {veggies: ["olives", "green peppers, spinach"]},
+      {meats: ["pepperoni", "ham"]}
+  ],
+  sideItems: [
+    "breadsticks",
+    "bbq wings 6 piece"
+  ],
+  sauces: "ranch",
+  specialInstructions: "please cut into squares",
+  paymentType: "cash",
+  storeId: 112,
+  orderTime: "20 minutes"
+}]
+}
+
+console.log(currentOrders)
 /*
 * Make the changes to the currentOrders object based on the ReadMe
 * Run your file with node pizza.js
